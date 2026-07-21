@@ -1,0 +1,211 @@
+/* ========================= */
+/* Style général             */
+/* ========================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-size:1em;
+
+    color:#222;
+
+    background:#f7f7f7;
+
+    width:45em;
+
+    margin:2em auto;
+
+    line-height:1.6;
+
+}
+
+/* ========================= */
+/* Barre de navigation       */
+/* ========================= */
+
+nav{
+
+    text-align:center;
+
+    margin-bottom:3em;
+
+}
+
+.menu{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:2.5em;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.menu li{
+
+    margin:0;
+
+}
+
+.nav-item{
+
+    text-decoration:none;
+
+    color:#666;
+
+    font-size:1em;
+
+    transition:color 0.2s;
+
+}
+
+.nav-item:hover{
+
+    color:#000;
+
+}
+
+.nav-item.active{
+
+    color:#000;
+
+    font-weight:bold;
+
+}
+
+/* ========================= */
+/* Carte de présentation     */
+/* ========================= */
+
+.presentation{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    background:white;
+
+    border:0.06em solid #d0d0d0;
+
+    padding:1.8em;
+
+    margin-bottom:1em;
+
+    box-shadow:0 0.08em 0.25em rgba(0,0,0,0.08);
+
+}
+
+.infos{
+
+    width:40em;
+
+}
+
+.photo img{
+
+    width:12.5em;
+
+    height:auto;
+
+}
+
+.mail{
+
+    color:#666;
+
+    font-style:italic;
+
+}
+
+.youtube{
+    width:1.2em
+}
+
+/* ========================= */
+/* Titres                    */
+/* ========================= */
+
+h1{
+
+    margin-top:0;
+
+    margin-bottom:0.5em;
+
+    font-size:1.5em;
+
+    font-weight:600;
+
+}
+
+h2{
+
+    margin-top:2em;
+
+    padding-bottom:0.3em;
+
+    border-bottom:0.06em solid #d8d8d8;
+
+    font-size:1.6em;
+
+    font-weight:500;
+
+}
+
+h3{
+
+    margin-top:1.5em;
+
+    font-size:1.2em;
+
+    font-weight:500;
+
+}
+
+/* ========================= */
+/* Paragraphes               */
+/* ========================= */
+
+p{
+
+    margin-bottom:1em;
+
+}
+
+/* ========================= */
+/* Listes                    */
+/* ========================= */
+
+ul{
+
+    padding-left:1.5em;
+
+}
+
+li{
+
+    margin-bottom:0.6em;
+
+}
+
+/* ========================= */
+/* Sections                  */
+/* ========================= */
+
+section{
+
+    margin-bottom:3em;
+
+}
