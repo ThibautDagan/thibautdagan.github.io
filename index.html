@@ -2,66 +2,108 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Page personnelle de Mahougnon Thibaut Dagan, doctorant en mathématiques appliquées.">
     <title>Accueil - Thibaut Dagan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Barre de navigation -->
-    <nav>
+    <!-- Navigation : chaque lien pointe vers une section de cette page -->
+    <nav aria-label="Navigation principale">
         <ul class="menu">
-            <li><a href="index.html" class="nav-item active">Home</a></li>
-            <li><a href="research.html" class="nav-item">Research</a></li>
-            <li><a href="teaching.html" class="nav-item">Teaching</a></li>
-            <li><a href="other.html" class="nav-item">Other activities</a></li>
+            <li class="nav-profile">
+                <a href="#home" aria-label="Retour à l'accueil">
+                    <img src="photo_profile.png" alt="Photo de profil de Thibaut Dagan">
+                </a>
+            </li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#research" class="nav-item">Research</a></li>
+            <li><a href="#teaching" class="nav-item">Teaching</a></li>
+            <li><a href="#other" class="nav-item">Others</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Présentation -->
-    <section id="home">
-        <div class="presentation">
-            <div class="infos">
-                <h1>Mahougnon Thibaut Dagan</h1>
-                <p>
-                    PhD Candidate in Applied Mathematics
-                </p>
-
-                <p>
-                    Laboratoire de Matériaux Céramiques<br>
-                    et de Mathématiques (CERAMATHS)<br>
-                    Université Polytechnique Hauts-de-France (UPHF)<br>
-                    INSA Hauts-de-France<br>
-                </p>
+    <main>
+        <!-- Présentation -->
+        <section id="home" aria-labelledby="page-title">
+            <div class="presentation">
+                <div class="infos">
+                    <h1 id="page-title">Mahougnon Thibaut Dagan</h1>
+                    <p>PhD Candidate in Applied Mathematics</p>
+                    <p>
+                        Laboratoire de Matériaux Céramiques et de Mathématiques (CERAMATHS)<br>
+                        Université Polytechnique Hauts-de-France (UPHF)<br>
+                        INSA Hauts-de-France
+                    </p>
+                </div>
             </div>
-            <div class="photo">
-                <img src="photo_profile.png" alt="Photo de profil">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Je suis doctorant en mathématiques appliquées au sein du laboratoire CERAMATHS des matériaux céramiques et de mathématiques, de l'INSA Hauts-de-France et de l'Université Polytechnique Hauts-de-France.
-        </p>
-        <p>  
-            <img class = "youtube" src="icones/youtube.png" alt="Logo de Youtube">
-            <a href="https://www.youtube.com/watch?v=GDFDKmFZhto&t=2s">Accédez à Youtube</a> 
-        </p> 
-        <h3>Research Interests</h3>
-        <ul>
-            <li><strong>Statistique Spatiale</strong></li>
-            <li><strong>Séries Temporelles</strong></li>
-            <li><strong>Champs aléatoires</strong></li>
-            <li><strong>Processus non linéaire</strong></li>
-        </ul>
-    </section>
+        <!-- À propos -->
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+            <p>
+                My research focuses on the statistical modeling of time-dependent data, particularly time series. More specifically, I am interested in spatio-temporal autoregressive models with dependent innovations, which allow for the joint modeling of temporal dynamics and spatial interactions.
+            </p>
+            <p>
+                <img class="youtube" src="icones/youtube.png" alt="">
+                <a href="https://www.youtube.com/watch?v=GDFDKmFZhto&amp;t=2s"
+                   target="_blank" rel="noopener noreferrer">Access YouTube</a>
+            </p>
+            <p>Research Interests : </p>
+            <ul>
+                <li><strong>Spatial statistics</strong></li>
+                <li><strong>Time series</strong></li>
+                <li><strong>Random fields</strong></li>
+                <li><strong>Non-linear processes</strong></li>
+            </ul>
+        </section>
 
-    <h3>Contact</h3>
-    <hr />
-        <p>Address : Campus Mont Houy 59313 Valenciennes Cedex 9, France</p>
-        <p>Office : B1-2</p>
-        <p class="mail">E-mail : thibaut.dagan@uphf.fr </p>
+        <!-- Recherche -->
+        <section id="research" aria-labelledby="research-title">
+            <h2 id="research-title">Research</h2>
+            <h3>Communications</h3>
+            <ul>
+                <li>June 2026 - Clermont-Ferrand, 57èmes Journées de Statistique (JdS) de la SFdS : Modèles autorégressifs spatiaux avec erreurs dépendantes.</li>
+                <li>May 2026 - Porquerolles, 11èmes Rencontres des Jeunes Statisticien-ne-s (RJS) : Modèles autorégressifs spatiaux avec erreurs dépendantes.</li>
+                <li>November 2025 - Valenciennes, Séminaire doctorant du CERAMATHS : Modèles AR spatiaux avec erreurs dépendantes.</li>
+            </ul>
+        </section>
+
+        <!-- Enseignement -->
+        <section id="teaching" aria-labelledby="teaching-title">
+            <h2 id="teaching-title">Teaching</h2>
+            <ul>
+                <li>Probability and Statistics - Bachelor 2, Computer Science</li>
+                <li>Probability and Statistics - Engineering students</li>
+                    <p>Practical sessions, data analysis projects, and applied statistics guidance.</p>
+                <li>Probability and Statistics - Preparatory class SHpI</li>
+            </ul>
+        </section>
+
+        <!-- Autres activités -->
+        <section id="other" aria-labelledby="other-title">
+            <h2 id="other-title">Other activities</h2>
+            <ul>
+                <li>April 2026 - Presentations at several high schools on the topic of artificial neurons.</li>
+                <li>June 2025 - Stage de seconde « Faire des mathématiques autrement ».</li>
+            </ul>
+        </section>
+
+        <!-- Coordonnées -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+            <p><span class="contact-label">Address :</span> Campus Mont Houy 59313 Valenciennes Cedex 9, France</p>
+            <p><span class="contact-label">Office :</span> B1-2</p>
+            <p class="mail"><span class="contact-label">E-mail :</span> <a href="mailto:thibaut.dagan@uphf.fr">thibaut.dagan@uphf.fr</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        Thibaut Dagan 2026
+    </footer>
+
 </body>
 </html>
